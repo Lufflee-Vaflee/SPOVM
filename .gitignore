@@ -1,1 +1,8 @@
 build
+*.json
+*.vscode
+.gitignore
+*.o
+main
+*.txt
+s
