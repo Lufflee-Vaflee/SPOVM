@@ -15,13 +15,13 @@ SRC = $(wildcard *.c)
 OBJ = $(patsubst %.c, %.o, $(SRC))
 
 all : $(OBJ)
-	$(CC) $(OBJ) -o $(TARGET) 
+	$(CC) $(OBJ) -o $(TARGET)
 
 %.o : %.c
 	$(CC) $(CCFLAGS) -c $<  -o $@
 
 clean:
-	rm $(TARGET) *.o
+	rm $(TARGET) *.o 
 
 #https://www.youtube.com/watch?v=DtGrdB8wQ_8&ab_channel=GabrielParmer
 #https://www.youtube.com/watch?v=9PeEYcYHHkM&ab_channel=TripleDistillation
